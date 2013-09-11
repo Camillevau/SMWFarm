@@ -4,7 +4,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point.' );
 }
 define( 'SMWFARM_VERSION', '0.1' );
-
 // Registration of the extension credits, see Special:Version.
 $wgExtensionCredits['semfarm'][] = array(
 	'path' => __FILE__,
@@ -16,30 +15,6 @@ $wgExtensionCredits['semfarm'][] = array(
 	'url' => 'https://semantic-mediawiki.org',
 	'descriptionmsg' => 'smwfarm-desc'
 );
-
-
-$wikiConfigList['poc_config'] = array(
-        'title'=>'POC',
-        'prefix'=>'poc',
-        'url'=>'https://poc.km.vaucelle.org',
-        'dbname'=>'semwiki',
-        'enableUploads'=>'true'
-        );
-
-$wikiConfigList['mowlie_config'] = array(
-        'title'=>'Mowlie',
-        'prefix'=>'mowlie',
-        'url'=>'mowlie.km.vaucelle.org',
-        'enableUploads'=>'true'
-        );
-
-$wikiConfigList['sisi_config'] = array(
-        'title'=>'Princesse Sisi',
-        'prefix'=>'sisi',
-        'url'=>'sisi.km.vaucelle.org',
-        'enableUploads'=>'true'
-        );
-
 
 #flag to spot if wiki exists
 $wikiExists=0;
