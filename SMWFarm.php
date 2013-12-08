@@ -38,7 +38,7 @@ foreach ( $wikiConfigList as $wikiConfig ) {
 	   $wgUseImageMagick = true;
 	}
 	## Database settings
-	if(is_null($wikiConfig['dbname']))
+	if(!array_key_exists('dbname',$wikiConfig))
 	{
 	   $wgDBname = $wikiConfig['prefix']."_wiki";
 	}
